@@ -1,0 +1,666 @@
+.event-page {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+  }
+  
+  .event-page .div {
+    background-color: #000000;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .event-page .overlap {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 75px;
+    left: 349px;
+    position: absolute;
+    top: 88px;
+    width: 718px;
+  }
+  
+  .event-page .text-wrapper {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 60px;
+    left: 96px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    white-space: nowrap;
+    width: 527px;
+  }
+  
+  .event-page .rectangle {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 718px;
+  }
+  
+  .event-page .overlap-group {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 75px;
+    left: 359px;
+    position: absolute;
+    top: 189px;
+    width: 207px;
+  }
+  
+  .event-page .text-wrapper-2 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 61px;
+    left: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 135px;
+  }
+  
+  .event-page .rectangle-2 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 207px;
+  }
+  
+  .event-page .text-wrapper-3 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 61px;
+    left: 35px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 137px;
+  }
+  
+  .event-page .overlap-2 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 75px;
+    left: 612px;
+    position: absolute;
+    top: 189px;
+    width: 207px;
+  }
+  
+  .event-page .text-wrapper-4 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 61px;
+    left: 75px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 57px;
+  }
+  
+  .event-page .overlap-3 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 75px;
+    left: 868px;
+    position: absolute;
+    top: 189px;
+    width: 207px;
+  }
+  
+  .event-page .text-wrapper-5 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 61px;
+    left: 69px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    width: 70px;
+  }
+  
+  .event-page .text-wrapper-6 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 60px;
+    left: 217px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 808px;
+    white-space: nowrap;
+    width: 139px;
+  }
+  
+  .event-page .overlap-4 {
+    height: 60px;
+    left: 403px;
+    position: absolute;
+    top: 271px;
+    width: 119px;
+  }
+  
+  .event-page .text-wrapper-7 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 60px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 119px;
+  }
+  
+  .event-page .overlap-5 {
+    height: 60px;
+    left: 643px;
+    position: absolute;
+    top: 271px;
+    width: 149px;
+  }
+  
+  .event-page .text-wrapper-8 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 60px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 149px;
+  }
+  
+  .event-page .overlap-6 {
+    height: 60px;
+    left: 927px;
+    position: absolute;
+    top: 271px;
+    width: 89px;
+  }
+  
+  .event-page .text-wrapper-9 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 60px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 89px;
+  }
+  
+  .event-page .overlap-7 {
+    border-radius: 50px;
+    height: 155px;
+    left: 386px;
+    position: absolute;
+    top: 809px;
+    width: 681px;
+  }
+  
+  .event-page .rectangle-3 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 74px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 681px;
+  }
+  
+  .event-page .text-wrapper-10 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 60px;
+    left: 91px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 6px;
+    white-space: nowrap;
+    width: 500px;
+  }
+  
+  .event-page .rectangle-4 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 155px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 681px;
+  }
+  
+  .event-page .need-to-book {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 120px;
+    left: 54px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 14px;
+    width: 574px;
+  }
+  
+  .event-page .overlap-group-2 {
+    height: 228px;
+    left: 79px;
+    position: absolute;
+    top: 368px;
+    width: 280px;
+  }
+  
+  .event-page .img {
+    height: 154px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 131px;
+  }
+  
+  .event-page .text-wrapper-11 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 34px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .rectangle-5 {
+    height: 154px;
+    left: 149px;
+    position: absolute;
+    top: 0;
+    width: 131px;
+  }
+  
+  .event-page .text-wrapper-12 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 184px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .text-wrapper-13 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 53px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 153px;
+  }
+  
+  .event-page .text-wrapper-14 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 372px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 382px;
+  }
+  
+  .event-page .overlap-8 {
+    height: 228px;
+    left: 411px;
+    position: absolute;
+    top: 368px;
+    width: 280px;
+  }
+  
+  .event-page .text-wrapper-15 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 84px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 153px;
+  }
+  
+  .event-page .text-wrapper-16 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 44px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .text-wrapper-17 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 185px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .overlap-9 {
+    height: 228px;
+    left: 743px;
+    position: absolute;
+    top: 368px;
+    width: 280px;
+  }
+  
+  .event-page .text-wrapper-18 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 52px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 153px;
+  }
+  
+  .event-page .text-wrapper-19 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .text-wrapper-20 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 187px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .overlap-10 {
+    height: 228px;
+    left: 1075px;
+    position: absolute;
+    top: 368px;
+    width: 280px;
+  }
+  
+  .event-page .text-wrapper-21 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 47px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 153px;
+  }
+  
+  .event-page .text-wrapper-22 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 183px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 14px;
+  }
+  
+  .event-page .text-wrapper-23 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 706px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 382px;
+  }
+  
+  .event-page .text-wrapper-24 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 100px;
+    font-weight: 400;
+    height: 125px;
+    left: 1036px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 382px;
+  }
+  
+  .event-page .overlap-11 {
+    background-image: url(https://c.animaapp.com/ItKrNUpb/img/rectangle-34.svg);
+    background-size: 100% 100%;
+    height: 121px;
+    left: 359px;
+    position: absolute;
+    top: 619px;
+    width: 750px;
+  }
+  
+  .event-page .text-wrapper-25 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 80px;
+    font-weight: 400;
+    height: 100px;
+    left: 126px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 9px;
+    width: 498px;
+  }
+  
+  .event-page .rectangle-6 {
+    height: 121px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 750px;
+  }
+  
+  .event-page .text-wrapper-26 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 80px;
+    font-weight: 400;
+    height: 100px;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 9px;
+    width: 729px;
+  }
+  
+  .event-page .text-wrapper-27 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 70px;
+    font-weight: 400;
+    height: 94px;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    width: 729px;
+  }
+  
+  .event-page .overlap-12 {
+    height: 96px;
+    left: 60px;
+    position: absolute;
+    top: 56px;
+    width: 126px;
+  }
+  
+  .event-page .text-wrapper-28 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 63px;
+    left: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .event-page .arrow {
+    height: 37px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 126px;
+  }
+  
+  .event-page .overlap-13 {
+    height: 121px;
+    left: 1108px;
+    position: absolute;
+    top: 66px;
+    width: 284px;
+  }
+  
+  .event-page .rectangle-7 {
+    height: 121px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 284px;
+  }
+  
+  .event-page .text-wrapper-29 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 50px;
+    font-weight: 400;
+    height: 63px;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 29px;
+  }
+  

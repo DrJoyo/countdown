@@ -1,0 +1,1 @@
+export { OpeningPage } from "./OpeningPage.jsx";

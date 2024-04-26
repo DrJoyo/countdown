@@ -1,0 +1,322 @@
+.add-edit-event {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+  }
+  
+  .add-edit-event .div {
+    background-color: #000000;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .add-edit-event .overlap {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 93px;
+    left: 351px;
+    position: absolute;
+    top: 116px;
+    width: 756px;
+  }
+  
+  .add-edit-event .text-wrapper {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 101px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+  }
+  
+  .add-edit-event .rectangle {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 93px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 756px;
+  }
+  
+  .add-edit-event .overlap-group {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 93px;
+    left: 353px;
+    position: absolute;
+    top: 266px;
+    width: 218px;
+  }
+  
+  .add-edit-event .text-wrapper-2 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+  }
+  
+  .add-edit-event .rectangle-2 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 93px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 218px;
+  }
+  
+  .add-edit-event .text-wrapper-3 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 37px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+  }
+  
+  .add-edit-event .overlap-2 {
+    height: 75px;
+    left: 166px;
+    position: absolute;
+    top: 124px;
+    width: 151px;
+  }
+  
+  .add-edit-event .text-wrapper-4 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .add-edit-event .overlap-3 {
+    height: 75px;
+    left: 180px;
+    position: absolute;
+    top: 265px;
+    width: 123px;
+  }
+  
+  .add-edit-event .overlap-4 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 93px;
+    left: 620px;
+    position: absolute;
+    top: 266px;
+    width: 218px;
+  }
+  
+  .add-edit-event .text-wrapper-5 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 79px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+  }
+  
+  .add-edit-event .overlap-group-2 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 93px;
+    left: 889px;
+    position: absolute;
+    top: 266px;
+    width: 218px;
+  }
+  
+  .add-edit-event .text-wrapper-6 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 73px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 8px;
+  }
+  
+  .add-edit-event .text-wrapper-7 {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 75px;
+    left: 164px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 473px;
+  }
+  
+  .add-edit-event .overlap-5 {
+    height: 75px;
+    left: 400px;
+    position: absolute;
+    top: 368px;
+    width: 125px;
+  }
+  
+  .add-edit-event .overlap-6 {
+    height: 75px;
+    left: 652px;
+    position: absolute;
+    top: 368px;
+    width: 157px;
+  }
+  
+  .add-edit-event .overlap-7 {
+    height: 75px;
+    left: 951px;
+    position: absolute;
+    top: 368px;
+    width: 94px;
+  }
+  
+  .add-edit-event .overlap-8 {
+    background-image: url(https://c.animaapp.com/9MICJ0TB/img/rectangle-24.svg);
+    background-size: 100% 100%;
+    height: 121px;
+    left: 433px;
+    position: absolute;
+    top: 720px;
+    width: 533px;
+  }
+  
+  .add-edit-event .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 80px;
+    font-weight: 400;
+    height: 100px;
+    left: 90px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 9px;
+  }
+  
+  .add-edit-event .img {
+    height: 121px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 533px;
+  }
+  
+  .add-edit-event .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 80px;
+    font-weight: 400;
+    height: 100px;
+    left: 70px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 9px;
+  }
+  
+  .add-edit-event .overlap-9 {
+    border-radius: 50px;
+    height: 194px;
+    left: 351px;
+    position: absolute;
+    top: 474px;
+    width: 756px;
+  }
+  
+  .add-edit-event .rectangle-3 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 194px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 756px;
+  }
+  
+  .add-edit-event .need-to-book {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    height: 150px;
+    left: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 17px;
+  }
+  
+  .add-edit-event .overlap-10 {
+    height: 64px;
+    left: 443px;
+    position: absolute;
+    top: 873px;
+    width: 523px;
+  }
+  
+  .add-edit-event .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "Jua", Helvetica;
+    font-size: 49.5px;
+    font-weight: 400;
+    height: 63px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  
+  .add-edit-event .line {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 523px;
+  }
+  
