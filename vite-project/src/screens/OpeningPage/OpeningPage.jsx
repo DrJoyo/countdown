@@ -1,8 +1,13 @@
 import React from "react";
+import { useState, createContext, useContext } from "react";
+import Cookies from 'js-cookie'
 import "./style.css";
 import { Link } from "react-router-dom";
 
 export const OpeningPage = () => {
+  const handleClick = (index) => {
+    Cookies.set('toset', index, { expires: 365, path: '/' });
+  };
   return (
     <div className="opening-page">
       <div className="div">
@@ -45,7 +50,7 @@ export const OpeningPage = () => {
         <div className="text-wrapper-14">:</div>
         <div className="overlap-3">
           <img className="rectangle-2" alt="Rectangle" src="https://c.animaapp.com/FKxUQPX7/img/rectangle-11.svg" />
-          <Link className="text-wrapper-15" to="addedit">Add My Event</Link>
+          <Link className="text-wrapper-15"onClick={handleClick(-1)} to="addedit">Add My Event</Link>
         </div>
       </div>
     </div>
