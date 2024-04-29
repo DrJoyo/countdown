@@ -14,7 +14,7 @@
     width: 1440px;
   }
   
-  .existing-event-page .overlap {
+  .existing-event-page .box-1 {
     background-image: url(https://c.animaapp.com/y9T6rErS/img/rectangle-27.svg);
     background-size: 100% 100%;
     height: 199px;
@@ -24,16 +24,15 @@
     width: 638px;
   }
   
-  .existing-event-page .RRR-WEEK-days {
+  .existing-event-page .in-box-1{
     color: #f96563;
     font-family: "Jua", Helvetica;
     font-size: 60px;
     font-weight: 400;
-    height: 135px;
-    left: 183px;
+    height: 100%;
+    align-content:center;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
     text-align: center;
     top: 31px;
   }
@@ -50,7 +49,7 @@
     font-size: 50px;
   }
   
-  .existing-event-page .overlap-group {
+  .existing-event-page .box-2 {
     background-image: url(https://c.animaapp.com/y9T6rErS/img/rectangle-27.svg);
     background-size: 100% 100%;
     height: 199px;
@@ -60,21 +59,20 @@
     width: 638px;
   }
   
-  .existing-event-page .miami-trip-days {
+  .existing-event-page .in-box-2 {
     color: #f96563;
     font-family: "Jua", Helvetica;
     font-size: 60px;
     font-weight: 400;
-    height: 135px;
-    left: 160px;
+    height: 100%;
+    align-content:center;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
     text-align: center;
     top: 31px;
   }
   
-  .existing-event-page .annie-s-wrapper {
+  .existing-event-page .box-3 {
     background-image: url(https://c.animaapp.com/y9T6rErS/img/rectangle-27.svg);
     background-size: 100% 100%;
     height: 199px;
@@ -84,16 +82,15 @@
     width: 638px;
   }
   
-  .existing-event-page .annie-s {
+  .existing-event-page .in-box-3 {
     color: #f96563;
     font-family: "Jua", Helvetica;
     font-size: 60px;
     font-weight: 400;
-    height: 135px;
-    left: 41px;
+    height: 100%;
+    align-content:center;
     letter-spacing: 0;
     line-height: normal;
-    position: absolute;
     text-align: center;
     top: 31px;
   }
@@ -190,3 +187,29 @@
     width: 263px;
   }
   
+  .existing-event-page .button-container {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .existing-event-page .prev-button, .existing-event-page .next-button {
+    color: #f96563;
+    font-family: "Jua", Helvetica;
+    font-size: 60px;
+    margin-top: 10px; /* Adjust as needed */
+    height:140px;
+    width:240px;
+    background-color: #ffffff;
+    border: none;
+    margin: 80px;
+    cursor: pointer;
+    border-radius: 40px;
+    text-align:center;
+    line-height:140px;
+  }

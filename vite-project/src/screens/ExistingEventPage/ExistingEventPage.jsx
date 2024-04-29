@@ -10,10 +10,6 @@ export const ExistingEventPage = () => {
   let existingEvents = [];
   if (existingEventsString) {
     existingEvents = JSON.parse(existingEventsString);
-  } else {
-    existingEvents = [['Name', 2024, 1, 1, 'Notes'], ['Name', 2024, 1, 1, 'Notes'], ['Name', 2024, 1, 1, 'Notes']];
-    const contentString = JSON.stringify(existingEvents);
-    Cookies.set('events', contentString, { expires: 365, path: '/' });
   }
   const eventCount = existingEvents.length;
 
@@ -23,29 +19,47 @@ export const ExistingEventPage = () => {
       const currMS = currentDate.getTime();
 
       const eventArray = existingEvents[index];
-      const eventDate = new Date(eventArray[1], eventArray[2], eventArray[3])
+      const eventDate = new Date(eventArray[1], eventArray[2] - 1, eventArray[3])
       const eventMS = eventDate.getTime();
       const daysUntil = Math.ceil((eventMS - currMS)/(1000 * 60 * 60 * 24))
       const eventName = eventArray[0];
       return [ eventName, daysUntil ];
     } else {
-      return [ "None" , 0 ];
+      return [ "N/A" , 0 ];
     }
   }
 
-  const [name0, days0] = eventDisplayData(0);
-  const [name1, days1] = eventDisplayData(1);
-  const [name2, days2] = eventDisplayData(2);
-
-  const handleClick = (index) => {
-    Cookies.set('toset', index, { expires: 365, path: '/' });
+  const handleViewClick = (index) => {
+    if (index < eventCount) {
+      Cookies.set('toset', index, { expires: 365, path: '/' });
+    } else {
+      Cookies.set('toset', -1, { expires: 365, path: '/' });
+    }
+    
   };
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevClick = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+  const handleNextClick = () => {
+    if (currentIndex < eventCount - 3) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const [name0, days0] = eventDisplayData(currentIndex);
+  const [name1, days1] = eventDisplayData(currentIndex + 1);
+  const [name2, days2] = eventDisplayData(currentIndex + 2);
 
   return (
     <div className="existing-event-page">
       <div className="div">
-        <div className="overlap">
-          <p className="RRR-WEEK-days">
+        <div className="box-1">
+          <p className="in-box-1">
             <span className="text-wrapper">
               {name0}
               <br />
@@ -53,8 +67,8 @@ export const ExistingEventPage = () => {
             <span className="span">{days0} Days left</span>
           </p>
         </div>
-        <div className="overlap-group">
-          <p className="miami-trip-days">
+        <div className="box-2">
+          <p className="in-box-2">
             <span className="text-wrapper">
               {name1}
               <br />
@@ -62,8 +76,8 @@ export const ExistingEventPage = () => {
             <span className="span">{days1} Days left</span>
           </p>
         </div>
-        <div className="annie-s-wrapper">
-          <p className="annie-s">
+        <div className="box-3">
+          <p className="in-box-3">
             <span className="text-wrapper">
               {name2}
               <br />
@@ -72,19 +86,27 @@ export const ExistingEventPage = () => {
           </p>
         </div>
         <div className="overlap-2">
-          <Link className="text-wrapper-3" to="../addedit">Add New Event</Link>
+          <Link className="text-wrapper-3" onClick={ () => handleViewClick(-1) } to="../addedit">Add New Event</Link>
         </div>
         <div className="overlap-3">
-          <Link className="text-wrapper-4" onClick={ () => handleClick(0) } to="../event">View Event 1</Link>
+          {currentIndex < eventCount ? <Link className="text-wrapper-4" onClick={ () => handleViewClick(currentIndex) } to="../event">View Event</Link> : <div className="text-wrapper-4">View Event</div>}
           <img className="line" alt="Line" src="https://c.animaapp.com/y9T6rErS/img/line-4.svg" />
         </div>
         <div className="overlap-4">
-          <Link className="text-wrapper-4" onClick={ () => handleClick(1) } to="../event">View Event 2</Link>
+          {currentIndex + 1 < eventCount ? <Link className="text-wrapper-4" onClick={ () => handleViewClick(currentIndex + 1) } to="../event">View Event</Link> : <div className="text-wrapper-4">View Event</div>}
           <img className="line" alt="Line" src="https://c.animaapp.com/y9T6rErS/img/line-4.svg" />
         </div>
         <div className="overlap-5">
-          <Link className="text-wrapper-4" onClick={ () => handleClick(2) } to="../event">View Event 3</Link>
+          {currentIndex + 2 < eventCount ? <Link className="text-wrapper-4" onClick={ () => handleViewClick(currentIndex + 2) } to="../event">View Event</Link> : <div className="text-wrapper-4">View Event</div>}
           <img className="line" alt="Line" src="https://c.animaapp.com/y9T6rErS/img/line-4.svg" />
+        </div>
+        <div className="button-container">
+          <div className="prev-button" onClick={() => handlePrevClick()}>
+            Prev
+          </div>
+          <div className="next-button" onClick={() => handleNextClick()}>
+            Next
+          </div>
         </div>
       </div>
     </div>

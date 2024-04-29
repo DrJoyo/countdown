@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, createContext, useContext } from "react";
+import { useState, useEffect } from "react";
 import Cookies from 'js-cookie'
 import "./style.css";
 import { Link } from "react-router-dom";
@@ -9,11 +9,29 @@ export const EventPage = () => {
   const existingEvents = existingEventsString ? JSON.parse(existingEventsString) : [];
   const toSetString = Cookies.get('toset')
   const toSet = toSetString ? parseInt(toSetString, 10) : -1;
-  let eventArray = ['Enter Name', 2024, 1, 1, 'Enter Notes'];
-  console.log(toSet);
-  if (toSet >= 0) {
-    eventArray = existingEvents[toSet];
-  }
+
+  const currentDate = new Date();
+  const currMS = currentDate.getTime();
+
+  const eventArray = existingEvents[toSet];
+  const eventDate = new Date(eventArray[1], eventArray[2] - 1, eventArray[3])
+  const eventMS = eventDate.getTime();
+  const initialDiff = Math.floor((eventMS - currMS) / 1000);
+
+  const [diff, setDiff] = useState(initialDiff);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDiff(prevDiff => prevDiff - 1);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const days = Math.floor(diff/(3600 * 24));
+  const hours = Math.floor((diff % (3600 * 24)) / (3600));
+  const minutes = Math.floor((diff % (3600)) / (60));
+  const seconds = diff % 60;
+
   return (
     <div className="event-page">
       <div className="div">
@@ -47,32 +65,32 @@ export const EventPage = () => {
         </div>
         <div className="overlap-group-2">
           <img className="img" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-11">0</div>
+          <div className="text-wrapper-11">{diff > 0 ? Math.floor(days / 10) : 0}</div>
           <img className="rectangle-5" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-12">7</div>
-          <div className="text-wrapper-13">months</div>
+          <div className="text-wrapper-12">{diff > 0 ? days % 10 : 0}</div>
+          <div className="text-wrapper-13">days</div>
         </div>
         <div className="text-wrapper-14">:</div>
         <div className="overlap-8">
-          <div className="text-wrapper-15">days</div>
+          <div className="text-wrapper-15">hours</div>
           <img className="img" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-16">1</div>
+          <div className="text-wrapper-16">{diff > 0 ? Math.floor(hours / 10) : 0}</div>
           <img className="rectangle-5" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-17">5</div>
+          <div className="text-wrapper-17">{diff > 0 ? hours % 10 : 0}</div>
         </div>
         <div className="overlap-9">
           <div className="text-wrapper-18">minutes</div>
           <img className="img" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-19">2</div>
+          <div className="text-wrapper-19">{diff > 0 ? Math.floor(minutes / 10) : 0}</div>
           <img className="rectangle-5" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-20">3</div>
+          <div className="text-wrapper-20">{diff > 0 ? minutes % 10 : 0}</div>
         </div>
         <div className="overlap-10">
           <div className="text-wrapper-21">seconds</div>
           <img className="img" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-11">4</div>
+          <div className="text-wrapper-11">{diff > 0 ? Math.floor(seconds / 10) : 0}</div>
           <img className="rectangle-5" alt="Rectangle" src="https://c.animaapp.com/ItKrNUpb/img/rectangle-19.png" />
-          <div className="text-wrapper-22">6</div>
+          <div className="text-wrapper-22">{diff > 0 ? seconds % 10 : 0}</div>
         </div>
         <div className="text-wrapper-23">:</div>
         <div className="text-wrapper-24">:</div>

@@ -36,7 +36,8 @@
     font-size: 100px;
     font-weight: 400;
     height: 125px;
-    left: 34px;
+    left: 0;
+    width: 130px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
