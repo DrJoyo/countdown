@@ -297,6 +297,8 @@
     position: absolute;
     top: 266px;
     width: 756px;
+    justify-content:center;
+    align-items:center;
   }
   
   .countdown-page .text-wrapper-16 {
@@ -304,11 +306,9 @@
     font-family: "Jua", Helvetica;
     font-size: 60px;
     font-weight: 400;
-    height: 75px;
-    left: 101px;
+    height: 100%;
     letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
+    line-height: 150%;
     text-align: center;
     top: 8px;
   }
